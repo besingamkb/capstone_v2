@@ -1,0 +1,34 @@
+/*.bdo-blue {
+	background: #0b2972;
+	border-bottom: #000 solid 1px;
+	color: #fff;
+}
+
+
+.bdo-blue .navbar-brand {
+	color: #fff;
+}*/
+
+/*.bdo-light-blue {
+	background: #081f55;
+}
+
+.bdo-light-blue div ul li {
+
+	border-bottom: #000 solid 1px;
+}*/
+
+
+.archives-customs {
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.form-control .month {
+	width: 100px;
+}
+
+.about-p {
+	text-align: justify;
+	text-indent: 25px;
+}
