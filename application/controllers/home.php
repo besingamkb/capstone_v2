@@ -19,6 +19,12 @@ class Home extends MY_Controller {
 		$data['page'] = "pages/about";
 		$this->load->view("template", $data);
 	}
+
+	public function calendar() {
+		$data['header']['title'] = "BOC Event calendar";
+		$data['page'] = "pages/calendar";
+		$this->load->view("template", $data);
+	}
 }
 
  ?>

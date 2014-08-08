@@ -30,6 +30,13 @@ class Login extends MY_Controller {
 		foreach ($this->users->getUlevel() as $key => $value) {
 			$ulevel = $value->ulevel;
 		}
+
+		if ( $validate == true ) {
+			parent::logs("User has logged in.", $this->input->get('username'));
+		} elseif ($validate == false) {
+			parent::logs("User failed to login.", $this->input->get('username'));
+		}
+
 		if ( $validate == true ) {
 			$sessionData = array(
 				'is_logged' => 'true',
@@ -38,15 +45,23 @@ class Login extends MY_Controller {
 			);
 
 			$this->session->set_userdata($sessionData);
+			
 			contextJson();
 			echo json_encode(array('status' => 'success'));
 		} else {
+			
 			contextJson();
 			echo json_encode(array('status' => 'fail'));
 		}
 	}
 
+	public function loggingOut() {
+		parent::logs("User has logged out.", $this->session->userdata('user'));
+		metaredirect(base_url() . "index.php/login/logout");
+	}
+
 	public function logout() {
+		
 		$this->session->sess_destroy();
 		redirect(base_url());
 	}

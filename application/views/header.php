@@ -14,6 +14,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url() ?>assets/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/css/calendar.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>assets/css/custom.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
@@ -117,7 +118,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="<?php echo base_url() ?>index.php/login/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="<?php echo base_url() ?>index.php/login/loggingOut"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -155,7 +156,7 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href=""><i class="fa fa-calendar-o fa-fw"></i> Calendar</a>
+                            <a href="<?php echo base_url(); ?>index.php/home/calendar"><i class="fa fa-calendar-o fa-fw"></i> Calendar</a>
                         </li>
                         <li>
                             <a href=""><i class="fa fa-edit fa-fw"></i> Contact Us</a>
@@ -203,10 +204,10 @@
                             <a href="#"><i class="fa fa-clipboard fa-fw"></i> Careers<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Second Level Item</a>
+                                    <a href="#">Training</a>
                                 </li>
                                 <li>
-                                    <a href="#">Second Level Item</a>
+                                    <a href="#">Job training</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

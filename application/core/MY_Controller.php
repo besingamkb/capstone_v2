@@ -6,10 +6,21 @@ class MY_Controller extends CI_Controller {
 		parent::__construct();
 		$this->load->helper("url");
 		$this->load->helper("html");
+		$this->load->model("logs");
 	}
 
+	public function logs($message, $username) {
+		
 
+		$username = $username;
+
+		$logs = array(
+			'logs_message' => $message,
+			'username' => $username,
+			'ip' => $_SERVER['REMOTE_ADDR']
+		);
+
+		$this->logs->saveLogs($logs);
+	}
 
 }
-
- ?>

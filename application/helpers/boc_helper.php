@@ -18,4 +18,8 @@ function redirect($url) {
 	header('Location:'. $url);
 }
 
+function metaredirect($url) {
+	echo '<meta http-equiv="refresh" content="0;url='.$url.'" />';
+}
+
 ?>

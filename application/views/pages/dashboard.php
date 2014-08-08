@@ -73,31 +73,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php foreach ($logs as $log) : ?>
                                         <tr>
-                                            <td>5</td>
-                                            <td><a href="">User has logged out.</a></td>
-                                            <td>itusit</td>
+                                            <td><?php echo $log->lid ?></td>
+                                            <td><a href=""><?php echo $log->logs_message ?></a></td>
+                                            <td><?php echo $log->username ?></td>
                                         </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td><a href="">User has block an normal user account.</a></td>
-                                            <td>itusit</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td><a href="">User has logged in.</a></td>
-                                            <td>rcortes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td><a href="">Users has add new post.</a></td>
-                                            <td>itutsit</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td><a href="">User has logged in.</a></td>
-                                            <td>admin</td>
-                                        </tr>
+                                        <?php endforeach; ?>
                                     </tbody>
                                 </table>
                                 <a href="">view more</a>
