@@ -119,13 +119,12 @@ CREATE TABLE `tbl_logs` (
   `logs_message` varchar(255) NOT NULL,
   `ip` varchar(255) NOT NULL,
   `datecreated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `datemodified` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`lid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_logs` */
 
-insert  into `tbl_logs`(`lid`,`username`,`logs_message`,`ip`,`datecreated`,`datemodified`) values (1,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(2,'admin','User has logged out.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(3,'admin','User failed to login.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(4,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(5,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(6,'admin','User has logged out.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(7,'admin','User failed to login.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(8,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(9,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00');
+insert  into `tbl_logs`(`lid`,`username`,`logs_message`,`ip`,`datecreated`) values (1,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44'),(2,'admin','User has logged out.','127.0.0.1','2014-08-09 10:41:44'),(3,'admin','User failed to login.','127.0.0.1','2014-08-09 10:41:44'),(4,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44'),(5,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44'),(6,'admin','User has logged out.','127.0.0.1','2014-08-09 10:41:44'),(7,'admin','User failed to login.','127.0.0.1','2014-08-09 10:41:44'),(8,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44'),(9,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44');
 
 /*Table structure for table `tbl_ports` */
 
