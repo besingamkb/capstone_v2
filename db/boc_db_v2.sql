@@ -117,7 +117,6 @@ CREATE TABLE `tbl_logs` (
   `lid` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) NOT NULL,
   `logs_message` varchar(255) NOT NULL,
-  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `ip` varchar(255) NOT NULL,
   `datecreated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `datemodified` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
@@ -126,7 +125,7 @@ CREATE TABLE `tbl_logs` (
 
 /*Data for the table `tbl_logs` */
 
-insert  into `tbl_logs`(`lid`,`username`,`logs_message`,`time`,`ip`,`datecreated`,`datemodified`) values (1,'admin','User has logged in.','2014-08-09 02:36:51','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(2,'admin','User has logged out.','2014-08-09 02:37:01','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(3,'admin','User failed to login.','2014-08-09 02:45:25','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(4,'admin','User has logged in.','2014-08-09 02:45:31','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(5,'admin','User has logged in.','2014-08-09 07:26:16','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(6,'admin','User has logged out.','2014-08-09 07:26:23','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(7,'admin','User failed to login.','2014-08-09 07:26:27','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(8,'admin','User has logged in.','2014-08-09 07:26:34','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(9,'admin','User has logged in.','2014-08-09 09:18:11','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00');
+insert  into `tbl_logs`(`lid`,`username`,`logs_message`,`ip`,`datecreated`,`datemodified`) values (1,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(2,'admin','User has logged out.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(3,'admin','User failed to login.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(4,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(5,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(6,'admin','User has logged out.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(7,'admin','User failed to login.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(8,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00'),(9,'admin','User has logged in.','127.0.0.1','2014-08-09 10:41:44','0000-00-00 00:00:00');
 
 /*Table structure for table `tbl_ports` */
 
