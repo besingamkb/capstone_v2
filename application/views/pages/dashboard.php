@@ -68,7 +68,7 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Title</th>
+                                            <th>Log Message</th>
                                             <th>Author</th>
                                         </tr>
                                     </thead>

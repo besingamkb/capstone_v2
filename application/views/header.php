@@ -213,6 +213,48 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <?php if ($this->session->userdata('is_logged') == true && $this->session->userdata('ulevel') ==  1) : ?>
+                        <li class="active">
+                        <a href="login.html"><i class="fa fa-user fa-fw"></i> Admin Option<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a  href="<?php echo base_url() ?>index.php/boc_system"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-users fa-fw"></i> Users</a>
+                            </li>
+                            <li>
+                               <a href="#"><i class="fa fa-sitemap fa-fw"></i> Departments<span class="fa arrow"></span></a>
+
+                                <ul class="nav nav-third-level" style="">
+                                    <li>
+                                        <a href="">Top Management</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Assesment & Operation Coordinating Group</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Intelligent Group</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Management Information System Technical Group</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Interim Internal Control</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Internal Administration Group</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Revenue Collection Monitoring Group</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Enforcement Group</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Post Entry & Audit Group</a>
+                                    </li>
+                                </ul>
+                            </li>
                         <li>
                             <a href=""><i class="fa fa-cogs fa-fw"></i> General Settings<span class="fa arrow"></span></a>
                             <ul class="nav nav-third-level" style="">
