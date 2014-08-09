@@ -33,3 +33,20 @@
 	text-indent: 25px;
 }
 
+div.boc-post {
+	height: 150px;
+	overflow: hidden;
+}
+
+div.boc-post p {
+	overflow: hidden;
+}
+
+.archives a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.archives a:hover {
+	color: rgba(255,255,255, 0.5);
+}

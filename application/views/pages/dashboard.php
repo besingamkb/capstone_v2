@@ -120,9 +120,9 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-5">
-                                            <div id="dataTables-example_filter" class="dataTables_filter">
+                                           <!--  <div id="dataTables-example_filter" class="dataTables_filter">
                                                 <label>Search:<input type="search" class="form-control input-sm" aria-controls="dataTables-example"></label>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <table class="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example" aria-describedby="dataTables-example_info">

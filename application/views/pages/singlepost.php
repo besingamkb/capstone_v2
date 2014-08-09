@@ -11,28 +11,16 @@
             <!-- /.row -->
             <div style="margin-top: 20px;"></div>
             <div class="row">
+                <?php foreach($posts as $post): ?>
                 <div class="col-lg-8">
                     <div class="archives-customs">
-                        <h1>Latest on Archives</h1>
+                        <h1><?php echo $post->title ?></h1>
                         <hr>
+                        <?php echo $post->posts ?>
                     </div>
-
-                    <?php foreach($posts as $post): ?>
-                        <div class="col-lg-6 archives">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                   <a href="<?php echo base_url(); ?>index.php/home/post/<?php echo $post->pid; ?>"><?php echo $post->title; ?></a>
-                                </div>
-                                <div class="panel-body boc-post">
-                                <?php echo $post->posts; ?>
-                                </div>
-                                <div class="panel-footer">
-                                    <em>By: <?php echo $post->username ?></em>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
+                    
                 </div>
+                <?php endforeach; ?>
 
                 <div class="col-lg-4">
                     <div class="panel panel-info">
