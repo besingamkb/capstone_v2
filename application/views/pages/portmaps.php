@@ -13,10 +13,22 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="archives-customs">
-                        <h1>Event this August</h1>
+                        <h1>Port Maps</h1>
                         <hr>
+                        <style>
+                          #map_wrapper {
+                                height: 400px;
+                            }
+
+                            #map_canvas {
+                                width: 100%;
+                                height: 150%;padding-bottom: 10px;
+                            }
+                        </style>
                     </div>
-                    <div id="calendar"></div>   
+                    <div id="map_wrapper">
+                        <div id="map_canvas" class="mapping"></div>
+                    </div>
                 </div>
 
                 <div class="col-lg-4">

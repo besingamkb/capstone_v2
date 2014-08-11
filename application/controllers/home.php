@@ -50,6 +50,53 @@ class Home extends MY_Controller {
 		$this->load->view("template", $data);
 
 	}
+
+	//port maps
+	public function portmap() {
+		$this->load->model('map');
+		$data['header']['title'] = "Port Maps";
+		$data['page'] = "pages/portmaps";
+
+		$this->load->library('googlemaps');
+
+		$config = array();
+		$config['center'] = "manila, philippines";
+		$config['zoom'] = "auto";
+		$config['map_type'] = "ROADMAP";
+		$config['map_height'] = "auto";
+		$config['map_width'] = "auto";
+
+		$this->googlemaps->initialize($config);
+		//print_r($this->cms->portmaps());
+
+
+		//marker
+		$marker = array();
+
+		foreach($this->map->portmaps() as $row) {
+			$marker['position'] = $row->coordinate;
+			$marker['infowindow_content'] = "<h5>" . $row->title . "</h5>";
+			$this->googlemaps->add_marker($marker);
+		}
+		
+		
+
+		$data['map'] = $this->googlemaps->create_map();
+
+
+		
+
+		$this->load->view('template', $data);
+	}
+
+	public function mapdata() {
+		$this->load->model('map');
+		contextJson();
+		foreach ($this->map->portmaps() as $row) {
+			echo "[" . "'" . $row->title . "'" . "],";
+		}
+		dprint($this->map->portmaps());
+	}
 }
 
  ?>
