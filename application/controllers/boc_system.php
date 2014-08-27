@@ -15,11 +15,12 @@ class Boc_system extends MY_Controller {
 	}
 
 	public function dashboard() {
+		$this->load->model('mdepartment');
 		$data['header']['title'] = "Admin Panel | Dashboard";
 		$data['page'] = "pages/dashboard";
+
+		$data['department'] = $this->mdepartment->getAll(); // all department
 		$data['logs'] = $this->logs->getLogs();
-
-
 		$this->load->view("template", $data);
 	}
 }

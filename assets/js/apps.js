@@ -1,6 +1,8 @@
  var base_url = $('meta[name=base_url]').attr('content');
 
  jQuery(document).ready(function(e) {
+
+ 	$("#loginSubmitBtn").removeAttr("disabled");
  	$("#boc-login").submit(function(e) {
  			var action = $(this).attr('action');
  			var formData = $(this).serializeArray();
@@ -20,7 +22,7 @@
 	 						});
 	 					}, 2000);
  					} else {
- 						$('.panel-body').prepend('<p class="alert alert-success login-success" role="alert">Login Fail! wrong credentials.</p>');
+ 						$('.panel-body').prepend('<p class="alert alert-danger login-success" role="alert">Login Fail! wrong credentials.</p>');
 	 					setTimeout(function() {
 	 						$('.login-success').fadeOut(300, function() {
 	 							$(this).remove();
@@ -39,5 +41,15 @@
  				}
  			})
  		e.preventDefault();
+
+ 		
  	});
+
+ 	$("#add_employee_validation").click(function() {
+       $(this).hide("slow");
+    });
+
+    setTimeout(function() {
+    	$("#add_employee_validation").hide("1000");
+    }, 10000);
  });

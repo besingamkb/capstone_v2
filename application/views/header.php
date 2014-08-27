@@ -32,6 +32,19 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+        <script src="<?php echo base_url() ?>assets/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/components/underscore/underscore-min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/components/jstimezonedetect/jstz.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="<?php echo base_url() ?>assets/js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="<?php echo base_url() ?>assets/js/sb-admin-2.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/calendar.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/apps.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/cal_app.js"></script>
 
 </head>
 
@@ -129,9 +142,10 @@
             <div class="navbar-default sidebar bdo-light-blue" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
+                        <?php if ($this->session->userdata('is_logged') == true && $this->session->userdata('ulevel') ==  1) : ?>
                         <li class="sidebar-search">
                             <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
+                                <input type="text" class="form-control" placeholder="Search Employee..">
                                 <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
@@ -139,7 +153,7 @@
                             </span>
                             </div>
                             <!-- /input-group -->
-                        </li>
+                        </li><?php endif; ?>
                         <li>
                             <a href="<?php echo base_url(); ?>"><i class="fa fa-home fa-fw"></i> Home</a>
                         </li>
@@ -195,7 +209,7 @@
                                     <a href="#">PROBIHITED/RESTRICTION IMPORTATIONS</span></a>
                                 </li>
                                 <li>
-                                    <a href="#">Port Maps</span></a>
+                                    <a href="<?php echo base_url() ?>index.php/home/portmap">Port Maps</span></a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -227,31 +241,31 @@
 
                                 <ul class="nav nav-third-level" style="">
                                     <li>
-                                        <a href="">Top Management</a>
+                                        <a href="<?php echo base_url(); ?>index.php/department/index/1">Top Management</a>
                                     </li>
                                     <li>
-                                        <a href="">Assesment & Operation Coordinating Group</a>
+                                        <a href="<?php echo base_url(); ?>index.php/department/index/2">Assesment & Operation Coordinating Group</a>
                                     </li>
                                     <li>
-                                        <a href="">Intelligent Group</a>
+                                        <a href="<?php echo base_url(); ?>index.php/department/index/3">Intelligent Group</a>
                                     </li>
                                     <li>
-                                        <a href="">Management Information System Technical Group</a>
+                                        <a href="<?php echo base_url(); ?>index.php/department/index/4">Management Information System Technical Group</a>
                                     </li>
                                     <li>
-                                        <a href="">Interim Internal Control</a>
+                                        <a href="<?php echo base_url(); ?>index.php/department/index/5">Interim Internal Control</a>
                                     </li>
                                     <li>
-                                        <a href="">Internal Administration Group</a>
+                                        <a href="<?php echo base_url(); ?>index.php/department/index/6">Internal Administration Group</a>
                                     </li>
                                     <li>
-                                        <a href="">Revenue Collection Monitoring Group</a>
+                                        <a href="<?php echo base_url(); ?>index.php/department/index/7">Revenue Collection Monitoring Group</a>
                                     </li>
                                     <li>
-                                        <a href="">Enforcement Group</a>
+                                        <a href="<?php echo base_url(); ?>index.php/department/index/8">Enforcement Group</a>
                                     </li>
                                     <li>
-                                        <a href="">Post Entry & Audit Group</a>
+                                        <a href="<?php echo base_url(); ?>index.php/department/index/9">Post Entry & Audit Group</a>
                                     </li>
                                 </ul>
                             </li>

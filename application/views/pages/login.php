@@ -28,7 +28,7 @@
                                     <input class="form-control" placeholder="Password" name="password" type="password" required>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <input type="Submit" class="btn btn-lg btn-success btn-block" value="Login">
+                                <input type="Submit" id="loginSubmitBtn" class="btn btn-lg btn-success btn-block" value="Login" disabled="disabled">
                             </fieldset>
                         </form>
                     </div>

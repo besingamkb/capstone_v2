@@ -69,7 +69,7 @@
                                         <tr>
                                             <th>ID</th>
                                             <th>Log Message</th>
-                                            <th>Author</th>
+                                            <th>Username</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -94,9 +94,10 @@
                     <h3 class="page-header" style="margin-top: -5px;">ALL EMPLOYEE</h3>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <button type="button" class="btn btn-success"><i class="fa fa-plus-square fa-fw"></i> Add New</button>
+                            <a href="<?php echo base_url() ?>index.php/department/add" type="button" class="btn btn-success"><i class="fa fa-plus-square fa-fw"></i> Add New</a>
                             <button type="button" class="btn btn-info"><i class="fa fa-file-excel-o fa-fw"></i> Export</button>
                         </div>
+                        <?php //dprint($department); ?>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -104,19 +105,15 @@
                                     <div class="row">
                                         <div class="col-sm-7">
                                             <div class="dataTables_length" id="dataTables-example_length">
-                                                <label>
+                                                <!-- <label>
                                                     <select name="dataTables-example_length" aria-controls="dataTables-example" class="form-control input-sm">
-                                                        <option>Top Management</option>
-                                                        <option>Assesment & Operation Coordinating Group</option>
-                                                        <option>Intelligent Group</option>
-                                                        <option>Management Information System Technical Group</option>
-                                                        <option>Interim Internal Control</option>
-                                                        <option>Internal Administration Group</option>
-                                                        <option>Revenue Collection Monitoring Group</option>
-                                                        <option>Enforcement Group</option>
-                                                        <option>Post Entry & Audit Group</option>
+                                                        <option>- all -</option>
+                                                        <?php foreach($department as $dept): ?>
+                                                            <option value="<?php echo $dept->deptid ?>"><?php echo $dept->deptname ?></option>
+                                                        <?php endforeach; ?>
+                                                        
                                                     </select> view by department
-                                                </label>
+                                                </label> -->
                                             </div>
                                         </div>
                                         <div class="col-sm-5">
