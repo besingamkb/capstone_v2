@@ -175,7 +175,7 @@
                         <li>
                             <a href=""><i class="fa fa-edit fa-fw"></i> Contact Us</a>
                         </li>
-                        <li>
+                        <li style="display: none">
                             <a href="#"><i class="fa fa-bullhorn fa-fw"></i> Announcement</span></a>
                             <!-- <ul class="nav nav-second-level">
                                 <li>

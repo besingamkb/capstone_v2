@@ -23,5 +23,9 @@ class Boc_system extends MY_Controller {
 		$data['logs'] = $this->logs->getLogs();
 		$this->load->view("template", $data);
 	}
+
+	public function users() {
+		
+	}
 }
 
