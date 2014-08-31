@@ -26,9 +26,9 @@ class Users extends CI_Model {
 	}
 
 	public function userPagi($limit, $offset) {
-		$q = $this->db->select("tbl_user.uid, tbl_user.empno, tbl_user.ulevel, tbl_user.username, tbl_user.datecreated, lib_ulevel.ulevelid, lib_ulevel.ulevelname")
+		$q = $this->db->select("tbl_user.uid, tbl_user.empno, tbl_user.ulevel, tbl_user.username, tbl_user.datecreated")
 			->from('tbl_user')
-			->join('lib_ulevel', 'lib_ulevel.ulevelid = tbl_user.ulevel')
+			//->join('lib_ulevel', 'lib_ulevel.ulevelid = tbl_user.ulevel')
 			->limit($limit, $offset);
 		$ret['rows'] = $q->get()->result();
 

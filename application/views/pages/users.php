@@ -18,13 +18,16 @@
                         <?php foreach($result as $res): ?>
                             <tr>
                                 <td><?php echo $res->uid ?></td>
-                                <td><?php echo $res->uid ?></td>
-                                <td><?php echo $res->uid ?></td>
-                                <td><?php echo $res->uid ?></td>
-                                <td><?php echo $res->uid ?></td>
+                                <td><?php echo $res->empno ?></td>
+                                <td><?php echo $res->username ?></td>
+                                <td><?php echo $res->ulevel ?></td>
+                                <td><?php echo $res->datecreated ?></td>
                             </tr>
                         <?php endforeach; ?>
                     </table>
+                     <?php if(strlen($pagination)): ?>
+                        <p>Pages: <?php echo $pagination ?></p>
+                    <?php endif; ?>
                 </div>
 
             </div>

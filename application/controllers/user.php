@@ -14,19 +14,23 @@ class User extends MY_Controller {
 	}
 
 	public function all($offset = 0) {
+
+		// requires
 		$this->load->model('users');
 		$this->load->library('pagination');
 
+		// limit and offset
 		$offset = (isset($offset)) ? $offset : 0;
 		$limit = 10;
 
+		// pagination config's
 		$config = array();
 		$config['base_url'] = base_url() . "index.php/user/all";
 		$config['per_page'] = $limit;
 		$config['uri_segment'] = 3;
 
+		// pagination data's
 		$result = $this->users->userPagi($limit, $offset);
-
 		$data['result'] = $result['rows'];
 		$data['num_results'] = $result['num_rows'];
 
