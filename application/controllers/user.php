@@ -43,4 +43,8 @@ class User extends MY_Controller {
  		$data['page'] = "pages/users";
 		$this->load->view("template", $data);
 	}
+
+	public function profile() {
+		echo $this->uri->segment(3);
+	}
 }

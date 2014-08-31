@@ -27,7 +27,7 @@
                     </table>
                      <?php if(strlen($pagination)): ?>
                         <p>Pages: <?php echo $pagination ?></p>
-                    <?php endif; ?>
+                    <?php endif; ?> 
                 </div>
 
             </div>
