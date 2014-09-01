@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="col-lg-5 form-group input-group">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" placeholder="Search employee..">
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
                             </button>
