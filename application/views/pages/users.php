@@ -9,7 +9,7 @@
                 <div class="col-lg-12">
                     <table class="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example" aria-describedby="dataTables-example_info">
                         <tr>
-                            <th>ID</th>
+                            <th>    </th>
                             <th>Employee No.</th>
                             <th>Username</th>
                             <th>User Level</th>
@@ -17,7 +17,7 @@
                         </tr>
                         <?php foreach($result as $res): ?>
                             <tr>
-                                <td><?php echo $res->uid ?></td>
+                                <td width="50"><a href="<?php echo base_url(); ?>index.php/user/profile/<?php echo $res->empno ?>"><i class="fa fa-edit"></i></a> <a href="" id="delete"><i class="fa fa-times"></a></i></td>
                                 <td><?php echo $res->empno ?></td>
                                 <td><?php echo $res->username ?></td>
                                 <td><?php echo $res->ulevel ?></td>
@@ -34,3 +34,10 @@
 
 
     </div>
+
+    <script type="text/javascript">
+    var del = document.getElementById("delete");
+    del.addEventListener("click", function() {
+        alert("Delete!!");
+    });
+    </script>

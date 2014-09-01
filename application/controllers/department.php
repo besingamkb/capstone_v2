@@ -50,48 +50,48 @@ class Department extends MY_Controller {
 				break;
 
 			case 4:
-				$data['header']['title'] = "Top Management | Dashboard";
-				$data['page_title'] = "Assesment and Operation Coordination";
+				$data['header']['title'] = "Management Information System Technical Group | Dashboard";
+				$data['page_title'] = "Management Information System Technical Group";
 				$data['page'] = "pages/departmentpaginate";
 				$result = $this->mdepartment->records(4, $limits, $offset);
 				$data['result'] = $result['rows'];
 				break;
 
 			case 5:
-				$data['header']['title'] = "Top Management | Dashboard";
-				$data['page_title'] = "Assesment and Operation Coordination";
+				$data['header']['title'] = "Interim Internal Control | Dashboard";
+				$data['page_title'] = "Interim Internal Control";
 				$data['page'] = "pages/departmentpaginate";
 				$result = $this->mdepartment->records(5, $limits, $offset);
 				$data['result'] = $result['rows'];
 				break;
 
 			case 6:
-				$data['header']['title'] = "Top Management | Dashboard";
-				$data['page_title'] = "Assesment and Operation Coordination";
+				$data['header']['title'] = "Internal Administration Group | Dashboard";
+				$data['page_title'] = "Internal Administration Group";
 				$data['page'] = "pages/departmentpaginate";
 				$result = $this->mdepartment->records(6, $limits, $offset);
 				$data['result'] = $result['rows'];
 				break;
 
 			case 7:
-				$data['header']['title'] = "Top Management | Dashboard";
-				$data['page_title'] = "Assesment and Operation Coordination";
+				$data['header']['title'] = "Revenue Collection Monitoring Group | Dashboard";
+				$data['page_title'] = "Revenue Collection Monitoring Group";
 				$data['page'] = "pages/departmentpaginate";
 				$result = $this->mdepartment->records(7, $limits, $offset);
 				$data['result'] = $result['rows'];
 				break;
 
 			case 8:
-				$data['header']['title'] = "Top Management | Dashboard";
-				$data['page_title'] = "Assesment and Operation Coordination";
+				$data['header']['title'] = "Enforcement Group | Dashboard";
+				$data['page_title'] = "Enforcement Group";
 				$data['page'] = "pages/departmentpaginate";
 				$result = $this->mdepartment->records(8, $limits, $offset);
 				$data['result'] = $result['rows'];
 				break;
 
 			case 9:
-				$data['header']['title'] = "Top Management | Dashboard";
-				$data['page_title'] = "Assesment and Operation Coordination";
+				$data['header']['title'] = "Post Entry & Audit Group | Dashboard";
+				$data['page_title'] = "Post Entry & Audit Group";
 				$data['page'] = "pages/departmentpaginate";
 				$result = $this->mdepartment->records(9, $limits, $offset);
 				$data['result'] = $result['rows'];

@@ -7,6 +7,15 @@
                     <h1 class="page-header"><?php echo $page_title; ?></h1>
                 </div>
                 <div class="col-lg-12">
+                    <div class="col-lg-5 form-group input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+
+
                     <table class="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example" aria-describedby="dataTables-example_info">
                         <thead>
                             <tr role="row">
@@ -21,7 +30,7 @@
                             <!-- rkey, empno, surname, firstname, middlename, address, birthday, age, gender, religion, position, deptid, division, datehire, gsis, philhealth, tin, ioe, email -->
                             <?php foreach($result as $row): ?>
                             <tr class="gradeA odd">
-                                <td class="sorting_1"><a href="<?php echo base_url(); ?>index.php/user/profile/<?php echo $row->rkey ?>"><?php echo $row->surname ?></a></td>
+                                <td class="sorting_1"><a href="<?php echo base_url(); ?>index.php/user/profile/<?php echo $row->empno ?>"><?php echo $row->surname ?></a></td>
                                 <td class=" "><?php echo $row->firstname ?></td>
                                 <td class=" "><?php echo $row->deptname ?></td>
                                 <td class="center "><?php echo $row->email ?></td>
