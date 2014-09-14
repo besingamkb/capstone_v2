@@ -7,10 +7,10 @@ class MY_Controller extends CI_Controller {
 		$this->load->helper("url");
 		$this->load->helper("html");
 		$this->load->model("logs");
+		$this->load->model("content_management", "cms"); 
 	}
 
 	public function logs($message, $username) {
-		
 
 		$username = $username;
 

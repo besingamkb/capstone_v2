@@ -72,7 +72,7 @@
                     <i class="fa fa-file-o fa-fw"></i>  <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-messages">
-                    <li>
+                    <!-- <li>
                         <a href="#">
                             <div>
                                 <strong>Larry Page</strong>
@@ -107,13 +107,13 @@
                             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
                         </a>
                     </li>
-                    <li class="divider"></li>
-                    <li>
+                    <li class="divider"></li> -->
+                    <!-- <li>
                         <a class="text-center" href="#">
                             <strong>Read All Anouncement</strong>
                             <i class="fa fa-angle-right"></i>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
                 <!-- /.dropdown-messages -->
             </li>

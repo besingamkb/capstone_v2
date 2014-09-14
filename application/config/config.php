@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/kevin/capstone_v2/';
+$config['base_url']	= 'http://localhost:8080/kevin/capstone_v2/';
 
 /*
 |--------------------------------------------------------------------------

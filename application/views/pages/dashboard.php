@@ -22,7 +22,15 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+
+                                    <?php foreach($content_management as $cms): ?>
                                         <tr>
+                                            <td><?php echo $cms->pid ?></td>
+                                            <td><?php echo $cms->title ?></td>
+                                            <td><?php echo $cms->username ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                       <!--  <tr>
                                             <td>5</td>
                                             <td>18 customs employees probed for smuggling</td>
                                             <td>itusit</td>
@@ -46,7 +54,7 @@
                                             <td>1</td>
                                             <td>Welcome to BOC Website! </td>
                                             <td>admin</td>
-                                        </tr>
+                                        </tr> -->
                                     </tbody>
                                 </table>
                                 <a href="">view more</a>

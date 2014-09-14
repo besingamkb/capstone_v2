@@ -52,4 +52,18 @@
     setTimeout(function() {
     	$("#add_employee_validation").hide("1000");
     }, 10000);
+
+    // json content management
+    $.ajax({
+    	url: base_url + "index.php/json/allContents",
+    	success: function(e) {
+    		//console.log(e);
+    		$.each(e, function(i, data) {
+    			//console.log(data.datecreated);
+    			$(".dropdown-messages").append('<li><a href="#"><div><strong>' + data.username + '</strong><span class="pull-right text-muted"><em>'+ data.datecreated +'</em></span></div><div>'+data.title+'</div></a></li><li class="divider"></li>');
+
+    		});
+    	$(".dropdown-messages").append('<li><a class="text-center" href="#"><strong>Read All Anouncement</strong><i class="fa fa-angle-right"></i></a></li>');
+    	}
+    });
  });
