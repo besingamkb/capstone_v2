@@ -199,13 +199,13 @@
                             <a href="#"><i class="fa fa-question-circle fa-fw"></i> Inquiries<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Importance</a>
+                                    <a href="<?php echo base_url() ?>index.php/inquiries/importance">Importance</a>
                                 </li>
                                 <li>
-                                    <a href="#">Privileges</a>
+                                    <a href="<?php echo base_url() ?>index.php/inquiries/privileges">Privileges</a>
                                 </li>
                                 <li>
-                                    <a href="#">PROBIHITED/RESTRICTION IMPORTATIONS</span></a>
+                                    <a href="<?php echo base_url() ?>index.php/inquiries/pri">PROBIHITED/RESTRICTION IMPORTATIONS</span></a>
                                 </li>
                                 <li>
                                     <a href="<?php echo base_url() ?>index.php/home/portmap">Port Maps</span></a>
