@@ -172,7 +172,7 @@
                             <a href="<?php echo base_url(); ?>index.php/home/calendar"><i class="fa fa-calendar-o fa-fw"></i> Calendar</a>
                         </li>
                         <li>
-                            <a href=""><i class="fa fa-edit fa-fw"></i> Contact Us</a>
+                            <a href="<?php echo base_url(); ?>index.php/home/contact"><i class="fa fa-edit fa-fw"></i> Contact Us</a>
                         </li>
                         <li style="display: none">
                             <a href="#"><i class="fa fa-bullhorn fa-fw"></i> Announcement</span></a>

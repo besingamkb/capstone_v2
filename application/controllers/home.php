@@ -89,6 +89,16 @@ class Home extends MY_Controller {
 		$this->load->view('template', $data);
 	}
 
+	public function contact() {
+		/*$data['header']['title'] = "About BOC";
+		$data['page'] = "pages/about";
+		$this->load->view("template", $data);*/
+
+		$data['header']['title'] = "Contact Page";
+		$data['page'] = "pages/contact";
+		$this->load->view("template", $data);
+	}
+
 	public function mapdata() {
 		$this->load->model('map');
 		contextJson();
