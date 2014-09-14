@@ -141,10 +141,10 @@
             <div class="navbar-default sidebar bdo-light-blue" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <?php if ($this->session->userdata('is_logged') == true && $this->session->userdata('ulevel') ==  1) : ?>
+                        <?php //if ($this->session->userdata('is_logged') == true && $this->session->userdata('ulevel') ==  1) : ?>
                         <li class="sidebar-search">
                             <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search Employee..">
+                                <input type="text" class="form-control" placeholder="Search ..">
                                 <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
@@ -152,7 +152,7 @@
                             </span>
                             </div>
                             <!-- /input-group -->
-                        </li><?php endif; ?>
+                        </li><?php //endif; ?>
                         <li>
                             <a href="<?php echo base_url(); ?>"><i class="fa fa-home fa-fw"></i> Home</a>
                         </li>
@@ -217,10 +217,10 @@
                             <a href="#"><i class="fa fa-clipboard fa-fw"></i> Careers<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Training</a>
+                                    <a href="<?php echo base_url() ?>index.php/home/job_openings">Jobs Opening</a>
                                 </li>
                                 <li>
-                                    <a href="#">Job training</a>
+                                    <a href="<?php echo base_url() ?>index.php/home/job_openings">Training</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

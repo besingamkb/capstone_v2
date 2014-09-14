@@ -99,6 +99,12 @@ class Home extends MY_Controller {
 		$this->load->view("template", $data);
 	}
 
+	public function job_openings() {
+		$data['header']['title'] = "Carrer Page";
+		$data['page'] = "pages/jobs";
+		$this->load->view("template", $data);
+	}
+
 	public function mapdata() {
 		$this->load->model('map');
 		contextJson();
